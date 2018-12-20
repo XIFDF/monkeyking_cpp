@@ -51,6 +51,7 @@ inline T ShewHeap<T>::getMaxKey()
 	return root->key;
 }
 
+//斜堆的合并
 template<typename T>
 int ShewHeap<T>::merge(ShewHeap<T> *other) {
 	if (this == other) return -1;
@@ -60,7 +61,8 @@ int ShewHeap<T>::merge(ShewHeap<T> *other) {
 	other->root = NULL;
 	return 1;
 }
-//斜堆和合并，斜堆的基本操作
+
+//斜堆(节点和节点)的合并，斜堆的基本操作
 template<typename T>
 ShewHeap<T>::Node<T> * ShewHeap<T>::merge(Node<T> *root1, Node<T> *root2) {
 	if (root1 == NULL) return root2;
