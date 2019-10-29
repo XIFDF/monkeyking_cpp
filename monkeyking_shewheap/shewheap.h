@@ -5,14 +5,14 @@
 #include <stack>
 using namespace std;
 
-//斜堆实现类定义
+//斜堆较为完整的定义类，问题解决无需使用此类(核心算法使用迭代)
 template <typename T> class ShewHeap {
 
 public:
 	template <typename T> class Node {
 	public:
 		Node() = default;
-		Node(T key, Node<T> &left, Node<T> &right) :
+		Node(T key, Node<T> *left, Node<T> *right) :
 			key(key), left(left), right(right) { }
 		Node(T key) : key(key), left(), right() { }
 

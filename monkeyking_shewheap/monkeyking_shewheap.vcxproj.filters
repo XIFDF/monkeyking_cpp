@@ -15,21 +15,18 @@
     </Filter>
   </ItemGroup>
   <ItemGroup>
-    <ClInclude Include="stdafx.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
-    <ClInclude Include="targetver.h">
-      <Filter>头文件</Filter>
-    </ClInclude>
     <ClInclude Include="shewheap.h">
+      <Filter>头文件</Filter>
+    </ClInclude>
+    <ClInclude Include="Node.h">
       <Filter>头文件</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
-    <ClCompile Include="stdafx.cpp">
+    <ClCompile Include="monkeyking_shewheap.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
-    <ClCompile Include="monkeyking_shewheap.cpp">
+    <ClCompile Include="Node.cpp">
       <Filter>源文件</Filter>
     </ClCompile>
   </ItemGroup>
